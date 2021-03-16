@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style-type:none;
+            text-decoration:none;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size:1em;
+            font-weight:300;
+            color:#000;
+        }
+        body{
+            width:100%;
+            height:auto;
+            /* body에 스타일링을 지양해주십시오. */
+        }
+        #hdr{
+            width:100%;
+            min-height:150px;
+            height:auto;
+            box-sizing:border-box;
+            padding:0 50px 0 40px;
+            box-shadow:1px 1px 5px rgba(0, 0, 0, 0.1);
+            overflow:hidden;
+        }
+        #hdr .hdr-logo{
+            width:150px;
+            height:150px;
+            background:url("../img/logo.png") no-repeat;
+            background-size:cover;
+            float:left;
+        }
+
+
+
+
+
+        #hdr #nav{
+            float:right;
+        }
+        #hdr #nav ul{
+            float:right;
+        }
+        #hdr #nav li{
+            float:right;
+            padding:0px 20px;
+            line-height:150px;
+        }
+        #cntnr{
+            clear:both;
+            width:60%;
+            min-height:800px;
+            height:auto;
+            margin:0 auto;
+        }
+        #cntnr .cntnr-top-margin{
+            width:100%;
+            height:40px;
+        }
+        #cntnr .article{
+            width:100%;
+            /* height:200px; */
+            /* border:1px solid #ccc; */
+            box-sizing:border-box;
+            margin:0 0 20px 0;
+        }
+
+
+
+
+
+.main-container{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+
+}
+
+.main-container .loggin {
+            font-size: 20px;
+            padding-top: 20px;
+            ;
+        }
+
+.main-container .main-wrap{
+	width:768px;
+
+}
+
+.main-container .main-wrap .logo-wrap{
+	padding-top:20px;
+}
+
+.main-container .main-wrap .logo-wrap img
+{
+	width: 100px;
+	height: 100px;
+}
+
+
+.main-container .main-wrap header .logo-wrap{
+	display:flex;	
+	flex-direction: column;
+	align-items: center;
+}
+.login-input-section-wrap{
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login-input-wrap{
+	width: 465px;
+	height :48px;
+	border: solid 1px rgb(201, 186, 186);
+	background: white;
+}
+.password-wrap{
+	margin-top: 13px;
+}
+.login-input-wrap input{
+	border: none;
+	width:430px;
+	margin-top: 10px;
+	font-size: 14px;
+	margin-left: 10px;
+	height:30px;
+}
+.login-button-wrap {
+	padding-top: 13px;
+}
+.login-button-wrap button{
+    cursor: pointer;
+	width: 465px;
+	height :48px;
+	font-size: 18px;
+	background: white;
+	color: rgb(118, 156, 238);
+	border: solid 1px ;
+}
+.login-stay-sign-in{
+	width: 465px;
+	height: 52px;
+	
+	display: flex;
+	font-size: 15px;
+	color: #4e4e4e;
+	align-items: center;
+	justify-content: flex-start;
+	border-bottom: solid 1px var(--border-gray-color);
+}
+.login-stay-sign-in i{
+	font-size: 25px;
+	color: #9ba1a3;
+}
+.login-stay-sign-in span{
+	padding-left: 5px;
+	line-height: 25px;
+}
+
+.Easy-sgin-in-wrap{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 40px;
+
+}
+.Easy-sgin-in-wrap h2{
+	font-size: 20px;
+}
+.Easy-sgin-in-wrap .sign-button-list
+{
+    padding-top:25px;
+	list-style: none;
+	width: 465px;
+	display: flex;
+	align-items: center;
+}
+.Easy-sgin-in-wrap .sign-button-list li{
+	padding-bottom: 10px;
+}
+.Easy-sgin-in-wrap .sign-button-list li button{
+	width: 200px;
+	height: 56px;
+	border: solid 1px var(--border-gray-color);
+	text-align: center;
+	background: white;
+    
+ 
+}
+
+#btnKakao{
+    background: rgb(243, 211, 69);
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#btnNaver{
+    background: rgb(74, 197, 49);
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+#btnNaver span{
+color: white;
+}
+
+
+.Easy-sgin-in-wrap .sign-button-list li button i{
+	padding-left: 15px;
+	font-size: 20px;
+    align-items: center;
+
+}
+
+.Easy-sgin-in-wrap .sign-up{
+	color:var(--font-color);
+	font-size: 14px;
+	padding-top: 50px;
+
+}
+
+.Easy-sgin-in-wrap .sign-up input{
+    margin-left: 10px;
+    color: rgb(118, 156, 238);
+    border: none;
+    width: 110px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+
+
+
+        #ftr{
+            width:100%;
+            min-height:200px;
+            height:auto;
+            background:#eee;
+            font-size:0.8em;
+            line-height:2em;
+        }
+        #ftr .wrapper{
+            width:60%;
+            min-height:200px;
+            height:auto;
+            margin:0 auto;
+        }
+        #ftr .wrapper #ftr-nav{
+            height:50px;
+        }
+        #ftr .wrapper #ftr-nav ul{
+            float:left;
+        }
+        #ftr .wrapper #ftr-nav ul li{
+            padding:20px 20px 15px 20px;
+            float:left;
+        }
+        #ftr .wrapper #ftr-nav ul li:first-child{
+            padding:20px 20px 15px 0px;
+        }
+        #ftr .wrapper .ftr-arti{
+            clear:both;
+        }
+        #ftr .wrapper .ftr-arti p{
+            padding:0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="hdr">
+        <div class="hdr-logo"></div>
+        <div id="nav">
+            <ul>
+                <li><a href="#">로그인 · 회원가입</a></li>
+                <li><a href="#">내 주차장 공유하기</a></li>
+                <li><a href="#">장기주차</a></li>
+                <li><a href="#">단기주차</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="cntnr">
+        <!-- 각자의 파트는 이곳에서부터 작업하실 수 있습니다. -->
+        <div class="cntnr-top-margin"></div>
+        <div class="article">
+
+ 
+            <div class="main-container">
+                
+                <div class="main-wrap">
+           <header>
+                <div class="logo-wrap">
+                    <img src="img/logo.png"> <p class="loggin"> 로그인 </p>
+                </div>
+               
+            </header>
+            
+
+
+            <section class="login-input-section-wrap">
+                <div class="login-input-wrap">	
+                    <input placeholder="UserEmail" type="text"></input>
+                </div>
+                <div class="login-input-wrap password-wrap">	
+                    <input placeholder="Password" type="password"></input>
+                </div>
+                <div class="login-button-wrap">
+                    <button>Sign in</button>
+                </div>
+                <div class="login-stay-sign-in">
+                    <!-- <i class="far fa-check-circle"></i> -->
+                    <input type="checkbox" name="xxx" value="yyy" checked>
+                    <span>자동로그인</span>
+                </div>
+            </section>
+
+
+            <section class="Easy-sgin-in-wrap">
+                <h2>손쉬운 로그인</h2>
+                <ul class="sign-button-list">
+                    <li><button type="button" id="btnKakao"><span>카카오톡으로 시작</span></button></li>
+                    <li><button type="button" id="btnNaver"><span>네이버로 시작</span></button></li>
+                </ul>
+                
+                <p class="sign-up"> 아직 회원이 아니세요? <input type="button" value="이메일로 회원가입"></input> </p>
+            </section>
+
+        </div>
+
+        </div>
+        </div>
+        
+
+        
+        <!-- 각자의 파트는 이곳까지 작업해주시면 되겠습니다. -->
+    </div>
+    <div id="ftr">
+        <div class="wrapper">
+            <div id="ftr-nav">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">위치기반 서비스 이용약관</a></li>
+                    <li><a href="#">안심운영정책</a></li>
+                </ul>
+            </div>
+            <div class="ftr-arti">
+                <p>｜ 상호 : ㈜어따세워 ｜ 대표 : 문상환 ｜ 사업자등록번호 : 210-42-10003<br> ｜ 주소 : 서울특별시 마포구 신수동 63-14 거구장 지층 비트캠프 신촌센터 5호<br> ｜ 전화 : 02-3486-9600 ｜ 팩스 : 02-6007-1245 ｜ 통신판매업 신고번호 : 제 서초-00098호</p>
+                <p>Copyright © 어따세워. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```
